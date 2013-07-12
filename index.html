@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <!-- Do not forget to @import banner CSS definition -->
+        <style type="text/css">
+            @import url('css/banner.css');
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #DBD5B4;
+            }
+            body > div {
+                width: 700px;
+                height: 500px;
+                border-radius: 5px;
+                box-shadow: 0 0 7px 1px #444;
+                background-color: #fff;
+                margin: auto;
+                overflow: hidden;
+            }
+            div.banner {
+                margin: 125px auto;
+            }
+        </style>
+        <!-- JQuery must be loaded before Banner -->
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/banner.js"></script>
+        <script type="text/javascript">
+            var banner1 = {};
+            $(document).ready(function() {
+                banner1 = new Banner($("#banner1"));
+                banner1.delay = 1000;
+                banner1.enable();
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <!-- You must define the same structure as here -->
+            <div class="banner" id="banner1">
+                <div class="prev"></div>
+                <div class="next"></div>
+                <div class="slides">
+                    <div>
+                        <div>banner1</div>
+                        <div>banner2</div>
+                        <div>banner3</div>
+                        <div>banner4</div>
+                        <div>banner5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Structure ends -->
+        </div>
+    </body>
+</html>

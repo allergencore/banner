@@ -1,0 +1,46 @@
+﻿div.banner {
+	width: 500px;
+	height: 250px;
+    padding: 0;
+    position: relative;
+    outline: #000 solid 1px;
+}
+div.banner div.prev {
+    /*margin: 100px auto 100px 0;*/
+    background: scroll transparent url('../img/banner_arrow_left.png') center no-repeat;
+    overflow: hidden;
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    top: 75px;
+    left: 5px;
+/*     border: 1px solid #000;
+    border-radius: 15px; */
+/*     border-left: 0;
+    border-radius: 10px 30px 30px 10px; */
+    display: none;
+}
+div.banner div.next {
+    background: scroll transparent url('../img/banner_arrow_right.png') center no-repeat;
+    overflow: hidden;
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    top: 75px;
+    left: 465px;
+    display: none;
+}
+div.banner div.slides {
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+}
+div.banner div.slides > div {
+    width: 500px;
+    height: 250px;
+}
+div.banner div.slides > div > div {
+    width: 500px;
+    height: 250px;
+    float: left;
+}
